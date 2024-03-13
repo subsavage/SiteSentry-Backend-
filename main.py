@@ -13,3 +13,6 @@ def generate(message: str):
     img.save(buf)
     buf.seek(0)
     return StreamingResponse(buf, media_type="image/jpeg")
+
+# if __name__ == "__main__":
+#     uvicorn.run(app, host="0.0.0.0", port=8000)
